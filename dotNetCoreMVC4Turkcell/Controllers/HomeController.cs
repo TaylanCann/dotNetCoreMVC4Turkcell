@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 
 namespace dotNetCoreMVC4Turkcell.Controllers
 {
@@ -19,9 +20,9 @@ namespace dotNetCoreMVC4Turkcell.Controllers
         }
 
         [HttpPost]
-        public IActionResult Register()
+        public IActionResult Register(IFormCollection forms)
         {
-
+            return View();
         }
     }
 }
