@@ -1,4 +1,6 @@
-﻿
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+
+@model dotNetCoreMVC4Turkcell.Models.User
 @{
     Layout = null;
 }
@@ -13,13 +15,16 @@
 <body>
     <form method="post">
         <p>
-            <input type="text" name="UserName" value="" placeholder="Kullanıcı Adı"  />
+            <input asp-for="UserName" placeholder="Kullanıcı Adı"  />
+            <span asp-validation-for=UserName ></span>
         </p>
         <p>
-            <input type="email" name="Email" value="" placeholder="Eposta"  />
+            <input asp-for="Email" placeholder="Eposta"  />
+            <span asp-validation-for=Email ></span>
         </p>
-        <p>
-            <input type="datetime-local" name="BirthDate" value="" placeholder="Doğum Tarihi"  />
+        <p>     
+            <input asp-for="Birthdate" placeholder="Doğum Tarihi"  />
+            <span asp-validation-for=Birthdate ></span>
         </p>
         <button type="submit" >Gönder</button>
     </form>

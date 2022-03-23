@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using dotNetCoreMVC4Turkcell.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace dotNetCoreMVC4Turkcell.Controllers
@@ -20,8 +21,12 @@ namespace dotNetCoreMVC4Turkcell.Controllers
         }
 
         [HttpPost]
-        public IActionResult Register(IFormCollection forms)
+        public IActionResult Register(User user)
         {
+            if (ModelState.IsValid)
+            {
+                return Redirect("/");
+            }
             return View();
         }
     }
