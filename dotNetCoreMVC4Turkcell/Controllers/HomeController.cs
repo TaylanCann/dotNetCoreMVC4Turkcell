@@ -17,5 +17,11 @@ namespace dotNetCoreMVC4Turkcell.Controllers
         { 
             return View(); 
         }
+
+        [HttpPost]
+        public IActionResult Register()
+        {
+
+        }
     }
 }
