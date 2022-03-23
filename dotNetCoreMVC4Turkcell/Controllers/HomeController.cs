@@ -4,6 +4,7 @@ namespace dotNetCoreMVC4Turkcell.Controllers
 {
     public class HomeController : Controller
     {
+        [HttpGet]
         public IActionResult Index()
         {
             ViewBag.Age = 24;
@@ -11,6 +12,7 @@ namespace dotNetCoreMVC4Turkcell.Controllers
             return View();
         }
 
+        [HttpGet]
         public IActionResult Register() 
         { 
             return View(); 
