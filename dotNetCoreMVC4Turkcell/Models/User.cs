@@ -9,6 +9,7 @@ namespace dotNetCoreMVC4Turkcell.Models
         
         [Required(ErrorMessage ="User Name must not be blank")]
         [MinLength(2,ErrorMessage ="Must be min 2 char")]
+        [Display(Name ="Kullanıcı adı")]
         public string UserName { get; set; }
 
         [Required(ErrorMessage = "E-Mail must not be blank")]
