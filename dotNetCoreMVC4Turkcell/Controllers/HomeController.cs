@@ -14,7 +14,7 @@ namespace dotNetCoreMVC4Turkcell.Controllers
             return View();
         }
 
-        [HttpGet]
+        [HttpGet] 
         public IActionResult Register() 
         { 
             return View(); 
@@ -25,7 +25,8 @@ namespace dotNetCoreMVC4Turkcell.Controllers
         {
             if (ModelState.IsValid)
             {
-                return Redirect("/");
+                return View("Thanks");
+
             }
             return View();
         }
