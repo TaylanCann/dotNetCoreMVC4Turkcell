@@ -5,19 +5,18 @@
 }
 
 
-    <form method="post">
-        <p>
-            <label asp-for="UserName"></label>
-            <input asp-for="UserName" placeholder="Kullanıcı Adı"  />
-            <span asp-validation-for=UserName ></span>
-        </p>
-        <p>
-            <input asp-for="Email" placeholder="Eposta"  />
-            <span asp-validation-for=Email ></span>
-        </p>
-        <p>     
-            <input asp-for="Birthdate" placeholder="Doğum Tarihi"  />
-            <span asp-validation-for=Birthdate ></span>
-        </p>
-        <button type="submit" >Gönder</button>
-    </form>
+<form method="post">
+    <p>
+        <label asp-for="UserName"></label>
+        <input asp-for="UserName" placeholder="Kullanıcı Adı" />
+        <span asp-validation-for=UserName></span>
+    </p>
+    <p>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" placeholder="Eposta" />
+        <span asp-validation-for=Email></span>
+    </p>
+   
+    <button type="submit">Katılıyorum</button>
+    <button type="submit">Katılmıyorum</button>
+</form>

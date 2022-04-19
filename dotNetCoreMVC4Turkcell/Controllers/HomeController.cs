@@ -26,7 +26,6 @@ namespace dotNetCoreMVC4Turkcell.Controllers
             if (ModelState.IsValid)
             {
                 return View("Thanks");
-
             }
             return View();
         }
